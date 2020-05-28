@@ -16,3 +16,16 @@ management:
   endpoint:
     health:
       show-details: always 
+
+feign:
+  hystrix:
+    enabled: true
+
+spring:
+  sleuth:
+      sampler:
+        probability: 3.0
+      
+logging:
+  level:
+    br.com.everis.treinamento.spring.cloud: trace
