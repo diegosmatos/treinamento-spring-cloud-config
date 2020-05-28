@@ -11,5 +11,5 @@ eureka:
 management:
   endpoints:
     web: 
-      expusure: 
-        include: metrics, loggers, info, health
+      exposure: 
+        include: "*"
